@@ -17,3 +17,13 @@ export const setFlex = ({x = 'center', y = 'center'} = {}) => {
     justify-content: ${x};
   `
 }
+
+export const setBackground = ({img, color} = {}) => {
+  return `
+    background: linear-gradient(${color}, ${color}), url(${img});  
+    background-position: center;
+    background-origin: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  `
+}

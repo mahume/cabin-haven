@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import homeImg from '../../images/lake-dock.jpg';
-import { setFlex } from '../../styles';
+import { setFlex, setBackground } from '../../styles';
 
 const Hero = styled.header`
   min-height: 100vh;
-  background: center/cover fixed no-repeat url(${homeImg});
-  ${setFlex()};
+  ${props => setBackground({ img: props.img, color: 'rgba(0, 0, 0, 0.5)' })}
+  ${setFlex()}
 `
 
 export default Hero;
