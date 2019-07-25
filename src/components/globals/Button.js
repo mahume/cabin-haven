@@ -18,4 +18,5 @@ export const PrimaryBtn = styled.button`
   }
   margin: ${props => `${props.t || 0} ${props.r || 0} ${props.b || 0} ${props.l || 0}`};
   text-decoration: none;
+  cursor: pointer;
 `
