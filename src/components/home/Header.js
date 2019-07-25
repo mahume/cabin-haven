@@ -9,7 +9,7 @@ const Header = () => {
     <Hero img={homeImg}>
       <Banner 
         greeting='Welcome to'
-        title='cabin'
+        title='Cabin Haven'
         text='Enter description here'
       >
         <PrimaryBtn t='1rem'>
