@@ -9,7 +9,7 @@ export default [
     title: "standard single",
     info:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quisquam corrupti dicta tempora sequi sapiente!",
-    price: 125
+    price: 55
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export default [
     title: "double room",
     info:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quisquam corrupti dicta tempora sequi sapiente!",
-    price: 250
+    price: 110
   },
   {
     id: 3,
@@ -25,6 +25,6 @@ export default [
     title: "presidential suite",
     info:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quisquam corrupti dicta tempora sequi sapiente!",
-    price: 375
+    price: 225
   }
 ];

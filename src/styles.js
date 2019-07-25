@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 export const setColor = {
-  primaryColor: '#af9a7d',
+  primaryColor: '#ba7b55',
   mainWhite: '#fff',
   mainBlack: '#222',
   mainGray: '#ececec',
