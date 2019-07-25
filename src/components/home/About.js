@@ -23,6 +23,39 @@ const About = () => {
   )
 }
 
-const AboutCenter = styled.div``
+const AboutCenter = styled.div`
+  .about-img, .about-info {
+    padding: ${setRem(30)};
+  }
+  .about-img {
+    img {
+      width: 100%;
+      display: block;
+      border: ${setBorder({ width: setRem(6), color: setColor.primaryColor })};
+    }
+  }
+  .about-info {
+    p {
+      letter-spacing: ${setLetterSpacing(3)};
+    }
+  }
+  width: 90vw;
+  margin: 0 auto;
+  ${media.desktop`
+    width: 100vw;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: ${setRem(32)};
+    .about-img {
+      align-self: center;
+    }
+    .about-info {
+      p {
+        width: 80%;
+      }
+    }
+  `}
+`
 
 export default About;
