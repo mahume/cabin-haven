@@ -4,7 +4,7 @@ import Section from '../globals/Section';
 import Title from '../globals/Title';
 import aboutImg from '../../images/lake-boats.jpg';
 import { setRem, setBorder, setColor, setLetterSpacing, media } from '../../styles';
-import { PrimaryBtn } from '../globals/Button';
+import { PrimaryBtn } from '../globals/Buttons';
 
 const About = () => {
   return (
@@ -42,6 +42,9 @@ const AboutCenter = styled.div`
   width: 90vw;
   margin: 0 auto;
   ${media.desktop`
+    .about-img, .about-info {
+      padding: ${setRem(30)};
+    }
     width: 100vw;
     max-width: 1170px;
     display: grid;

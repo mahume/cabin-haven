@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../globals/Hero';
 import homeImg from '../../images/lake-dock.jpg';
 import Banner from '../globals/Banner';
-import { PrimaryBtn } from '../globals/Button';
+import { PrimaryBtn } from '../globals/Buttons';
 
 const Header = () => {
   return (
