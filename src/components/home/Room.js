@@ -1,7 +1,7 @@
 import React from 'react';
 import { SmallBtn } from '../globals/Buttons';
 import styled from 'styled-components';
-import { setRem, setLeterSpacing, setTransition, setColor, setShadow, setBorder, setLetterSpacing } from '../../styles';
+import { setRem, setTransition, setColor, setShadow, setBorder, setLetterSpacing } from '../../styles';
 import PropTypes from 'prop-types';
 
 const Room = ({ className, room }) => {
@@ -12,7 +12,7 @@ const Room = ({ className, room }) => {
         <img src={img} alt={title} />
         <div className="price">{price}</div>
       </div>
-      <div className="room">
+      <div className="room-info">
         <h4>{title}</h4>
         <p>{info}</p>
         <SmallBtn>Hello World</SmallBtn>
@@ -51,6 +51,21 @@ export default styled(Room)`
     &:hover .price {
       opacity: 1;
     }
+  }
+  .room-info {
+    padding: ${setRem()};
+    h4 {
+      text-transform: capitalize;
+      letter-spacing: ${setLetterSpacing()};
+    }
+    p {
+      letter-spacing: ${setLetterSpacing()};
+    }
+  }
+  ${setShadow.light};
+  ${setTransition()};
+  &:hover {
+    ${setShadow.dark};
   }
 `;
 

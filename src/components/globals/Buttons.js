@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { setColor, setRem, setLetterSpacing, setFonts, setFont, setBorder, setTransition } from '../../styles'
+import { setColor, setRem, setLetterSpacing, setFont, setBorder, setTransition } from '../../styles'
 
 export const PrimaryBtn = styled.button`
   display: inline-block;
